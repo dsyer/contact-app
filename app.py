@@ -176,6 +176,7 @@ def json_contacts_delete(contact_id=0):
     contact.delete()
     return jsonify({"success": True})
 
+app.config.from_pyfile('config.py', silent=True)
 
 if __name__ == "__main__":
     app.run()
